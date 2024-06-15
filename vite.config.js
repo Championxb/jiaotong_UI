@@ -11,6 +11,9 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  server: {
+    host: "0.0.0.0",
+  },
   optimizeDeps: {
     // 开发时 解决这些commonjs包转成esm包
     include: [
