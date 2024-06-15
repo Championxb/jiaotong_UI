@@ -224,7 +224,23 @@ export const ALL_SECOND_IMAGES = [
       name: "日本京都火车站",
       url: [
         new URL(
-          "../assets/images/09二级界面案例/日本京都火车站.png",
+          "../assets/images/09二级界面案例/1-日本京都火车站图片1.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例/1-日本京都火车站图片2.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例/1-日本京都火车站图片3.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例/1-日本京都火车站图片4.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例/1-日本京都火车站图片5.jpg",
           import.meta.url
         ).href,
       ],
@@ -233,7 +249,27 @@ export const ALL_SECOND_IMAGES = [
       name: "英国伦敦国王十字火车站",
       url: [
         new URL(
-          "../assets/images/09二级界面案例/日本京都火车站.png",
+          "../assets/images/09二级界面案例/2-英国伦敦国王十字火车站图片1.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例/2-英国伦敦国王十字火车站图片2.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例/2-英国伦敦国王十字火车站图片3.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例/2-英国伦敦国王十字火车站图片4.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例/2-英国伦敦国王十字火车站图片5.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例/2-英国伦敦国王十字火车站图片6.jpg",
           import.meta.url
         ).href,
       ],
@@ -242,7 +278,19 @@ export const ALL_SECOND_IMAGES = [
       name: "德国柏林中央火车站",
       url: [
         new URL(
-          "../assets/images/09二级界面案例/日本京都火车站.png",
+          "../assets/images/09二级界面案例/3-德国柏林中央火车站图片1.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例/3-德国柏林中央火车站图片2.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例/3-德国柏林中央火车站图片3.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例/3-德国柏林中央火车站图片4.jpg",
           import.meta.url
         ).href,
       ],
@@ -251,7 +299,23 @@ export const ALL_SECOND_IMAGES = [
       name: "日本上野火车站",
       url: [
         new URL(
-          "../assets/images/09二级界面案例/日本京都火车站.png",
+          "../assets/images/09二级界面案例//4-日本上野火车站图片1.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例//4-日本上野火车站图片2.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例//4-日本上野火车站图片3.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例//4-日本上野火车站图片4.jpg",
+          import.meta.url
+        ).href,
+        new URL(
+          "../assets/images/09二级界面案例//4-日本上野火车站图片5.jpg",
           import.meta.url
         ).href,
       ],

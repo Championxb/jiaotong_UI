@@ -1,7 +1,7 @@
 <template>
     <ScaleScreen :width="1920" :height="1080">
         <div class="box">
-            <div class="return" @click="returnHome"> 返回</div>
+            <div class="return" @click="returnHome">返回</div>
             <div class="top">
                 <div class="left_arrow" @click="leftChange"></div>
                 <span class="title"> {{ titles[page.pageType][route.params.id].name }}</span>
@@ -89,20 +89,20 @@ const titles = ref([
     [
         {
             name: '日本京都火车站',
-            totalPage: 1
+            totalPage: 5
         },
         {
             name: '英国伦敦国王十字火车站',
-            totalPage: 1
+            totalPage: 6
         },
         {
 
             name: '德国柏林中央火车站',
-            totalPage: 1
+            totalPage: 4
         },
         {
             name: '日本上野火车站',
-            totalPage: 1
+            totalPage: 5
         }
     ]
 

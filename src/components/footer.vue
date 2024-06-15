@@ -52,7 +52,7 @@ const handleClick = (index) => {
         page.setPageType(index == 5 ? 1 : 0)
         router.push('/firstPage/' + index)
     }, 1000)
-    console.log(getDom.value[index].style)
+    // console.log(getDom.value[index].style)
 }
 const handleMouseEnter = (index) => {
     getDom.value[index].style.boxShadow = ' 0 0 10px #5ce9dd ';

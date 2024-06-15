@@ -1,7 +1,7 @@
 <template>
     <ScaleScreen :width="1920" :height="1080">
         <div class="box1" v-if="currentSelectButtonPage == 0">
-            <div class="return" @click="returnHome"> 返回</div>
+            <div class="return" @click="returnHome">返回</div>
             <div class="content">
                 <div class="content_bottom">
                     <ul class="content_bottom_item">
@@ -79,7 +79,7 @@ const handleClick = (index) => {
         height: 29px;
         width: 70px;
         position: absolute;
-        top: 15px;
+        top: 12px;
         right: 10px;
         // background: chartreuse;
         align-content: center;
