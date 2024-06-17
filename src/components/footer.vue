@@ -47,11 +47,18 @@ const handleClick = (index) => {
     // getDom.value[index].style.background = '#5ce9dd';
     // getDom.value[index].style.backgroundColor = 'transparent';
     checked(index)
-    setTimeout(() => {
-        page.setFirstPage(index)
-        page.setPageType(index == 5 ? 1 : 0)
-        router.push('/firstPage/' + index)
-    }, 1000)
+    if (index === 5 || index === 0) {
+        setTimeout(() => {
+            page.setFirstPage(index)
+            page.setPageType(index == 5 ? 1 : 0)
+            router.push('/firstPage/' + index)
+        }, 500)
+    } else if (index >= 2 && index <= 4) {
+        setTimeout(() => {
+            router.push('/firstPageStation/' + (index - 2))
+        }, 500)
+    }
+
     // console.log(getDom.value[index].style)
 }
 const handleMouseEnter = (index) => {

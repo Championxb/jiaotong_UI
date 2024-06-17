@@ -24,6 +24,11 @@ const router = createRouter({
       component: () => import("../views/SecondPage_AppExample.vue"),
     },
     {
+      path: "/firstPageStation/:id",
+      name: "FisrPageStationData",
+      component: () => import("../views/FisrPage_StationData.vue"),
+    },
+    {
       path: "/home",
       name: "home",
       component: () => import("../views/HomeView.vue"),

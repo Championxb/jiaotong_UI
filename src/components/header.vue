@@ -123,6 +123,7 @@ const timeFn = () => {
     position: relative;
     margin-top: 5px;
     margin-bottom: 4px;
+    color: rgb(255, 255, 255);
 
     .symbol_bg {
         position: absolute;
