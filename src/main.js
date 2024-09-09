@@ -8,7 +8,8 @@ import App from "./App.vue";
 import router from "./router";
 
 // import vue3SeamlessScroll from "vue3-seamless-scroll";
-import dataV from "@jiaminghi/data-view";
+// import dataV from "@jiaminghi/data-view";
+import DataVVue3 from '@kjgl77/datav-vue3'
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
 import "@/assets/css/public.scss";
@@ -24,7 +25,8 @@ pinia.use(piniaPluginPersistedstate);
 app.config.globalProperties.$echarts = echarts // vue3的挂载方式（一个用于注册能够被应用内所有组件实例访问到的全局属性的对象。）
 app.provide('$echarts', echarts) // vue3采用provide, inject方式使用
 
-app.use(dataV);
+// app.use(dataV);
+app.use(DataVVue3)
 app.use(ElementPlus);
 // app.use(vue3SeamlessScroll);
 app.component("ItemWrap", ItemWrap);
