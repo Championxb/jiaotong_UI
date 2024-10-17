@@ -5,7 +5,7 @@
             <div class="content">
                 <div class="content_bottom">
                     <ul class="content_bottom_item">
-                        <li v-for="item, index in contents" :key="index" @click="handleClick(index)">
+                        <li v-for="(item, index) in contents" :key="index" @click="handleClick(index)">
                             <div class="title">
                                 <span>{{ item }}</span>
                             </div>
@@ -15,15 +15,13 @@
             </div>
         </div>
         <div class="box2" v-if="currentSelectButtonPage == 5">
-            <div class="return" @click="returnHome"> </div>
+            <div class="return" @click="returnHome"></div>
             <div class="content">
                 <div class="content_bottom">
                     <ul class="content_bottom_item">
-                        <li v-for="item, index in 4" :key="index" @click="handleClick(index)">
-                            <div class="title">
-                            </div>
-                            <div class="pic">
-                            </div>
+                        <li v-for="(item, index) in 4" :key="index" @click="handleClick(index)">
+                            <div class="title"></div>
+                            <div class="pic"></div>
                         </li>
                     </ul>
                 </div>
@@ -32,37 +30,37 @@
     </ScaleScreen>
 </template>
 <script setup>
-import ScaleScreen from '@/components/scale-screen/scale-screen.vue'
-import { ref, onMounted } from 'vue';
-import { useRoute, useRouter } from 'vue-router'
-import { usePageStore } from '@/stores/modules/page'
-const route = useRoute()
-const router = useRouter()
-const currentSelectButtonPage = ref(0)
-const page = usePageStore()
+import ScaleScreen from "@/components/scale-screen/scale-screen.vue";
+import { ref, onMounted } from "vue";
+import { useRoute, useRouter } from "vue-router";
+import { usePageStore } from "@/stores/modules/page";
+const route = useRoute();
+const router = useRouter();
+const currentSelectButtonPage = ref(0);
+const page = usePageStore();
 onMounted(() => {
-    currentSelectButtonPage.value = route.params.id
+    currentSelectButtonPage.value = route.params.id;
     if (currentSelectButtonPage.value == 5) {
-        page.setPageType(1)
+        page.setPageType(1);
     }
-})
+});
 
 const returnHome = () => {
     // 返回上一级
-    router.push('/index')
-}
+    router.push("/index");
+};
 const contents = ref([
-    '成都南站改造方案',
-    '成都东站快速进站厅研究',
-    '杭州城站地区城市更新规划',
-    '地铁陆肖站TOD一体化城市设计',
-    '深圳平湖枢纽空间适应性评价与优化',
-    '成都双流区地下空间规划'
-])
+    "成都南站改造方案",
+    "成都东站快速进站厅研究",
+    "杭州城站地区城市更新规划",
+    "地铁陆肖站TOD一体化城市设计",
+    "深圳平湖枢纽空间适应性评价与优化",
+    "成都双流区地下空间规划",
+]);
 
 const handleClick = (index) => {
-    router.push('/firstPage/appExample/' + index)
-}
+    router.push("/firstPage/appExample/" + index);
+};
 </script>
 
 <style lang="scss" scoped>
@@ -86,7 +84,6 @@ const handleClick = (index) => {
         text-align: center;
         font-weight: 600;
         cursor: pointer;
-        ;
     }
 
     .content_bottom {
@@ -120,7 +117,7 @@ const handleClick = (index) => {
                     margin-top: 30px;
                     font-size: 28px;
                     font-weight: 600;
-                    font-family: '宋体';
+                    font-family: "宋体";
                 }
             }
         }

@@ -28,9 +28,9 @@ const getDom = ref(null);
 const content = ref([
   "应用案例",
   "综合交通数据",
-  "站体数据",
-  "站区数据",
   "站城数据",
+  "站区数据",
+  "站体数据",
   "国外高铁案例",
 ]);
 const router = useRouter();
@@ -76,8 +76,12 @@ const handleClick = (index) => {
     }, 500);
     return;
   } else {
-    const fileName = content.value[index];
-    downloadZIP("/" + fileName + ".rar");
+    // const fileName = content.value[index];
+    // downloadZIP("/" + fileName + ".rar");
+    setTimeout(() => {
+      router.push("/areasData/" + index);
+    }, 500);
+    return;
   }
   // console.log(getDom.value[index].style)
 };
