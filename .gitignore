@@ -2,4 +2,5 @@ node_modules
 dist
 .vscode/*
 public/*.rar
+public/平台数据包
 
