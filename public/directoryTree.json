@@ -1,0 +1,1264 @@
+[
+  {
+    "name": "01综合交通数据",
+    "type": "directory",
+    "children": [
+      {
+        "name": "客流预测公式.docx",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "02站城数据",
+    "type": "directory",
+    "children": [
+      {
+        "name": "2.1铁路枢纽总布置示意图",
+        "type": "directory",
+        "children": [
+          {
+            "name": "2.1.10贵阳铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.11哈尔滨铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.12海口铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.13杭州铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.14合肥铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.15呼和浩特铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.16济南铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.17京津冀核心区铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.18昆明铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.19拉萨铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.1中华人民共和国铁路地图集-枢纽图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.20兰州铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.21南昌铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.22南京铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.23南宁铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.24宁波铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.25青岛铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.26厦门铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.27上海铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.28深圳铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.29沈阳铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.2成都枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.30石家庄铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.31太原铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.32天津铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.33乌鲁木齐铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.34武汉铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.35西安铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.36西宁铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.37雄安新区铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.38银川铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.39长春铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.3成都铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.40长沙铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.41郑州铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.4重庆铁路枢纽总平面布置示意图.jpeg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.5重庆铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.6北京铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.7大连铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.8福州铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          },
+          {
+            "name": "2.1.9广州铁路枢纽总布置示意图.jpg",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "2.2城市空间数据",
+        "type": "directory",
+        "children": [
+          {
+            "name": "2.2.1成都市站点及线路数据",
+            "type": "directory",
+            "children": [
+              {
+                "name": "成都_站点.cpg",
+                "type": "file"
+              },
+              {
+                "name": "成都_站点.dbf",
+                "type": "file"
+              },
+              {
+                "name": "成都_站点.shp",
+                "type": "file"
+              },
+              {
+                "name": "成都_站点.shx",
+                "type": "file"
+              },
+              {
+                "name": "成都_线路.cpg",
+                "type": "file"
+              },
+              {
+                "name": "成都_线路.dbf",
+                "type": "file"
+              },
+              {
+                "name": "成都_线路.shp",
+                "type": "file"
+              },
+              {
+                "name": "成都_线路.shx",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2.2.2重庆市站点及线路数据",
+            "type": "directory",
+            "children": [
+              {
+                "name": "重庆_站点.cpg",
+                "type": "file"
+              },
+              {
+                "name": "重庆_站点.dbf",
+                "type": "file"
+              },
+              {
+                "name": "重庆_站点.shp",
+                "type": "file"
+              },
+              {
+                "name": "重庆_站点.shx",
+                "type": "file"
+              },
+              {
+                "name": "重庆_线路.cpg",
+                "type": "file"
+              },
+              {
+                "name": "重庆_线路.dbf",
+                "type": "file"
+              },
+              {
+                "name": "重庆_线路.shp",
+                "type": "file"
+              },
+              {
+                "name": "重庆_线路.shx",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2.2.3成渝高铁站线及道路数据",
+            "type": "directory",
+            "children": [
+              {
+                "name": "station.cpg",
+                "type": "file"
+              },
+              {
+                "name": "station.dbf",
+                "type": "file"
+              },
+              {
+                "name": "station.prj",
+                "type": "file"
+              },
+              {
+                "name": "station.sbn",
+                "type": "file"
+              },
+              {
+                "name": "station.sbx",
+                "type": "file"
+              },
+              {
+                "name": "station.shp",
+                "type": "file"
+              },
+              {
+                "name": "station.shp.xml",
+                "type": "file"
+              },
+              {
+                "name": "station.shx",
+                "type": "file"
+              },
+              {
+                "name": "成都主要道路.cpg",
+                "type": "file"
+              },
+              {
+                "name": "成都主要道路.dbf",
+                "type": "file"
+              },
+              {
+                "name": "成都主要道路.prj",
+                "type": "file"
+              },
+              {
+                "name": "成都主要道路.shp",
+                "type": "file"
+              },
+              {
+                "name": "成都主要道路.shx",
+                "type": "file"
+              },
+              {
+                "name": "成都行政边界.cpg",
+                "type": "file"
+              },
+              {
+                "name": "成都行政边界.dbf",
+                "type": "file"
+              },
+              {
+                "name": "成都行政边界.prj",
+                "type": "file"
+              },
+              {
+                "name": "成都行政边界.shp",
+                "type": "file"
+              },
+              {
+                "name": "成都行政边界.shx",
+                "type": "file"
+              },
+              {
+                "name": "成都高速公路.cpg",
+                "type": "file"
+              },
+              {
+                "name": "成都高速公路.dbf",
+                "type": "file"
+              },
+              {
+                "name": "成都高速公路.prj",
+                "type": "file"
+              },
+              {
+                "name": "成都高速公路.shp",
+                "type": "file"
+              },
+              {
+                "name": "成都高速公路.shx",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区主要道路.cpg",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区主要道路.dbf",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区主要道路.prj",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区主要道路.shp",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区主要道路.shx",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区行政边界.cpg",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区行政边界.dbf",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区行政边界.prj",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区行政边界.shp",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区行政边界.shx",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区高速公路.cpg",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区高速公路.dbf",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区高速公路.prj",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区高速公路.shp",
+                "type": "file"
+              },
+              {
+                "name": "重庆城区高速公路.shx",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县主要道路.cpg",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县主要道路.dbf",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县主要道路.prj",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县主要道路.shp",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县主要道路.shx",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县行政边界.cpg",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县行政边界.dbf",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县行政边界.prj",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县行政边界.shp",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县行政边界.shx",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县高速公路.cpg",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县高速公路.dbf",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县高速公路.prj",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县高速公路.shp",
+                "type": "file"
+              },
+              {
+                "name": "重庆郊县高速公路.shx",
+                "type": "file"
+              },
+              {
+                "name": "高铁线路.cpg",
+                "type": "file"
+              },
+              {
+                "name": "高铁线路.dbf",
+                "type": "file"
+              },
+              {
+                "name": "高铁线路.prj",
+                "type": "file"
+              },
+              {
+                "name": "高铁线路.sbn",
+                "type": "file"
+              },
+              {
+                "name": "高铁线路.sbx",
+                "type": "file"
+              },
+              {
+                "name": "高铁线路.shp",
+                "type": "file"
+              },
+              {
+                "name": "高铁线路.shx",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2.2.4成都市POI.csv",
+            "type": "file"
+          },
+          {
+            "name": "2.2.5重庆市POI.csv",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "2.3轨道交通数据",
+        "type": "directory",
+        "children": [
+          {
+            "name": ".DS_Store",
+            "type": "file"
+          },
+          {
+            "name": "2.3.1地铁",
+            "type": "directory",
+            "children": [
+              {
+                "name": "2.3.1.1 2022年全国地铁线数据",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "2022年全国地铁站点数据.cpg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁站点数据.dbf",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁站点数据.prj",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁站点数据.sbn",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁站点数据.sbx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁站点数据.shp",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁站点数据.shp.xml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁站点数据.shx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁线数据.cpg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁线数据.dbf",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁线数据.prj",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁线数据.sbn",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁线数据.sbx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁线数据.shp",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁线数据.shp.xml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2022年全国地铁线数据.shx",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "2.3.1.2 全国城市轨道交通运营数据",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "2021年1月.xlsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2023年10月.xlsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2023年11月.xlsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2023年12月.xlsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2023年2月.xlsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2023年3月.xlsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2023年4月.xlsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2023年5月.xlsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2023年6月.xlsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2023年7月.xlsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2023年8月.xlsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "2023年9月.xlsx",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "2.3.1.3 成都2024年地铁数据",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "成都_站点.cpg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "成都_站点.dbf",
+                    "type": "file"
+                  },
+                  {
+                    "name": "成都_站点.prj",
+                    "type": "file"
+                  },
+                  {
+                    "name": "成都_站点.shp",
+                    "type": "file"
+                  },
+                  {
+                    "name": "成都_站点.shx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "成都_线路.cpg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "成都_线路.dbf",
+                    "type": "file"
+                  },
+                  {
+                    "name": "成都_线路.prj",
+                    "type": "file"
+                  },
+                  {
+                    "name": "成都_线路.shp",
+                    "type": "file"
+                  },
+                  {
+                    "name": "成都_线路.shx",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "2.3.1.4 2022年各城市城轨交通在建线路规模.xlsx",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2.3.2高铁",
+            "type": "directory",
+            "children": [
+              {
+                "name": "2.3.2.1 城市群数据.xlsx",
+                "type": "file"
+              },
+              {
+                "name": "2.3.2.2 高铁运营里程、客流量数据.xlsx",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "2.4站城层面关联效应图.png",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "03站区数据",
+    "type": "directory",
+    "children": [
+      {
+        "name": ".DS_Store",
+        "type": "file"
+      },
+      {
+        "name": "3.1关联效应机制机理.xlsx",
+        "type": "file"
+      },
+      {
+        "name": "3.2站区层面关联效应图.png",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "04站体数据",
+    "type": "directory",
+    "children": [
+      {
+        "name": ".DS_Store",
+        "type": "file"
+      },
+      {
+        "name": "4.1成都城市轨道站点",
+        "type": "directory",
+        "children": [
+          {
+            "name": ".DS_Store",
+            "type": "file"
+          },
+          {
+            "name": "~$七、城市轨道站点.pptx",
+            "type": "file"
+          },
+          {
+            "name": "成都各站点功能分布.xlsx",
+            "type": "file"
+          },
+          {
+            "name": "成都各站点客流量.xlsx",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "4.2成都高铁客站",
+        "type": "directory",
+        "children": [
+          {
+            "name": ".DS_Store",
+            "type": "file"
+          },
+          {
+            "name": "4.2.1成都各站出行汇总",
+            "type": "directory",
+            "children": [
+              {
+                "name": "成都东站（休息日）.xlsx",
+                "type": "file"
+              },
+              {
+                "name": "成都东站（正常日）.xlsx",
+                "type": "file"
+              },
+              {
+                "name": "成都南站.xlsx",
+                "type": "file"
+              },
+              {
+                "name": "成都西站.xlsx",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "4.2.2成都各站资料整理",
+            "type": "directory",
+            "children": [
+              {
+                "name": ".DS_Store",
+                "type": "file"
+              },
+              {
+                "name": "4.2.2.1成都北站",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "成都（北）站.docx",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "4.2.2.2成都东站",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": ".DS_Store",
+                    "type": "file"
+                  },
+                  {
+                    "name": "成都东站图片",
+                    "type": "directory",
+                    "children": [
+                      {
+                        "name": ".DS_Store",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站一层仿真客流密度变化图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站一层活动设施布局图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站三层仿真客流密度变化图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站三层活动设施布局图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站不同接驳方式的使用概率对比图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站主要出站活动链空间图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站主要进站活动链空间图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站二层仿真客流密度变化图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站二层候车检票逻辑流程图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站二层活动设施布局图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站人员到达站区方式统计图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站人员离开站区方式统计图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站人群活动热力图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站休息日 8点、 18点热力图1.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站休息日 8点、 18点热力图2.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站出站人群到达时刻情况.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站出站人群活动链示意图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站出站各活动链平均年龄分级.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站出站各活动链平均携带行李重量.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站出站各活动链平均等车时间.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站出站各活动链平均耗费时间.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站出站各活动链总长度.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站出站平均延误时间.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站出站平均换乘时间.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站出站活动链逻辑流程图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站出站路流量加权总图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站列车到发数量统计.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站到达成都东站交通方式-（问卷192份，有效问卷112份）.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站到达成都东站最后一种交通方式.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站可提升区域位置图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站各类空间及各水平层设施平均使用概率对比图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站商业服务空间布局图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站商业服务空间满意度-（问卷300份，有效问卷232份）.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站商业服务空间现场照片.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站客流产生、消失区域分布图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站工作日 8点、 18点热力图1.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站工作日 8点、 18点热力图2.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站年龄大于50岁的人群对各活动链选择情况.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站慢性出行时长.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站慢行交通功能.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站护栏.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站接驳空间布局图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站接驳空间满意度-（问卷300份，有效问卷232份）.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站接驳空间现场照片.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站步行环境存在问题调查-（问卷300份，有效问卷232份）.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站步行环境满意度调查-（问卷300份，有效问卷232份）.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站步行空间布局图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站步行空间现场照片.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站物理环境一层建模三维效果图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站物理环境一层建模平面图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站物理环境三层建模三维效果图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站物理环境三层建模平面图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站物理环境二层建模三维效果图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站物理环境二层建模平面图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站物理环境负一层建模三维效果图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站物理环境负一层建模平面图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站瓶颈区域位置图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站盲道.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站离开成都东站交通方式-（问卷192份，有效问卷112份）.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站离开成都东站最后一种交通方式.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站竖向规划图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站站区公园广场.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站站区现状步行路径.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站站区现状用地性质图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站站区现状自行车路径.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站自行车停车点.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站设施平均排队长度.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站设施拓扑网络关系图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站设施最大排队长度.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站高铁综合体东广场地面层流线组织.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都东站高铁综合体西广场地面层流线组织.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "站区土地利用与慢行交通互动机制.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "高铁站点人员行为活动统计图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "高铁站点非高铁客流出行目的统计图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "高铁站点驻留客流驻留时间统计图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "高铁站点高铁客流出行目的统计图.jpg",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "成都东站数据整理.doc",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "4.2.2.3成都南站",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": ".DS_Store",
+                    "type": "file"
+                  },
+                  {
+                    "name": "成都南站图片",
+                    "type": "directory",
+                    "children": [
+                      {
+                        "name": ".DS_Store",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都南站人员到达站区方式统计图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都南站人员离开站区方式统计图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都南站休息日 8点、 18点热力图1.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都南站休息日 8点、 18点热力图2.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都南站工作日 8点、 18点热力图1.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都南站工作日 8点、 18点热力图2.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都南站慢性出行时长.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都南站慢行交通功能.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都南站换乘设施现状图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都南站竖向规划图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都南站站区现状步行路径.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都南站站区现状用地性质图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "成都南站站区现状自行车路径.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "高铁站点人员行为活动统计图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "高铁站点非高铁客流出行目的统计图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "高铁站点驻留客流驻留时间统计图.jpg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "高铁站点高铁客流出行目的统计图.jpg",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "4.2.2.4成都西站",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "成都西站.docx",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "4.3典型高铁站信息.xlsx",
+        "type": "file"
+      }
+    ]
+  }
+]

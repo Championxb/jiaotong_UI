@@ -29,6 +29,12 @@ export function readDirectoryRecursive(dirPath) {
   return result;
 }
 
-// 使用路径调用函数并返回目录结构
-const directoryTree = readDirectoryRecursive("../../public/平台数据包");
-console.log(JSON.stringify(directoryTree, null, 2));
+// 使用项目根目录的路径
+const directoryPath = path.join(process.cwd(), "../../public/平台数据包");
+const directoryTree = readDirectoryRecursive(directoryPath);
+
+fs.writeFileSync(
+  "../../public/directoryTree.json",
+  JSON.stringify(directoryTree, null, 2)
+);
+console.log("Directory tree has been written to directoryTree.json");
