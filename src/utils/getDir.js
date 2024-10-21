@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 
+let currentId = 0;
 export function readDirectoryRecursive(dirPath) {
   const result = [];
 
@@ -13,14 +14,16 @@ export function readDirectoryRecursive(dirPath) {
     if (stats.isDirectory()) {
       // 如果是文件夹，递归调用
       result.push({
-        name: file,
+        label: file,
+        id: currentId++,
         type: "directory",
         children: readDirectoryRecursive(fullPath),
       });
     } else {
       // 如果是文件
       result.push({
-        name: file,
+        label: file,
+        id: currentId++,
         type: "file",
       });
     }

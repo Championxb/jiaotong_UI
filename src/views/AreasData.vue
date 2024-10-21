@@ -9,12 +9,37 @@
         <div class="content_right">
           <div class="title">{{ contents[currentSelectButtonPage - 1] }}</div>
           <div class="files">
-            <el-tree
-              style="max-width: 600px"
-              :data="filesDir"
-              :props="defaultProps"
-              @node-click="handleNodeClick"
-            />
+            <el-tree-v2
+              :data="fileSource"
+              :height="400"
+              node-key="id"
+              :expand-on-click-node="true"
+            >
+              <template #default="{ node, data }">
+                <span class="custom-tree-node">
+                  <span class="prefix">
+                    <el-icon :size="20">
+                      <IconEpFolder />
+                    </el-icon>
+                  </span>
+                  <span>{{ node.label }}</span>
+                  <span
+                    class="sufix"
+                    style="
+                      position: absolute;
+                      right: 0;
+                      top: 0;
+                      margin-right: 50px;
+                    "
+                  >
+                    <el-icon :size="20">
+                      <!-- Download -->
+                      <IconEpDownload />
+                    </el-icon>
+                  </span>
+                </span>
+              </template>
+            </el-tree-v2>
           </div>
         </div>
       </div>
@@ -26,17 +51,25 @@ import ScaleScreen from "@/components/scale-screen/scale-screen.vue";
 import { ref, onMounted } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { usePageStore } from "@/stores/modules/page";
-import { readDirectoryRecursive } from "@/utils/getDir";
+import axios from "axios";
+// import { readDirectoryRecursive } from "@/utils/getDir";
 const route = useRoute();
 const router = useRouter();
 const currentSelectButtonPage = ref(0);
 const page = usePageStore();
-let filesDir = ref([]);
+let fileSource = ref([]);
 onMounted(() => {
   currentSelectButtonPage.value = route.params.id;
+  console.log(currentSelectButtonPage.value);
   // if (currentSelectButtonPage.value == 5) {
   //     page.setPageType(1);
   // }
+
+  // filesDir.value = readDirectoryRecursive(`./public/data/${contents[currentSelectButtonPage - 1]}`);
+  //   filesDir.value = readDirectoryRecursive(`./public/平台数据包`);
+  axios.get("/public/directoryTree.json").then((res) => {
+    fileSource.value = res.data;
+  });
 });
 
 const returnHome = () => {
@@ -44,10 +77,6 @@ const returnHome = () => {
   router.push("/index");
 };
 const contents = ref(["综合交通数据", "站城数据", "站区数据", "站体数据"]);
-onMounted(() => {
-  // filesDir.value = readDirectoryRecursive(`./public/data/${contents[currentSelectButtonPage - 1]}`);
-  filesDir.value = readDirectoryRecursive(`./public/平台数据包`);
-});
 </script>
 
 <style lang="scss" scoped>
@@ -123,5 +152,11 @@ onMounted(() => {
       }
     }
   }
+}
+:deep(.el-tree) {
+  //   color: antiquewhite;
+  //   font-size: 20px;
+  //透明背景
+  //   background-color: transparent;
 }
 </style>
