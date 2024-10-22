@@ -19,7 +19,7 @@ let originalWidth = ref(0);
 let originalHeight = ref(0);
 let onResize = ref(null);
 let observer = ref(null);
-const screenWrapper = ref(null)
+const screenWrapper = ref(null);
 /**
  * 防抖函数
  * @param {T} fn
@@ -38,7 +38,7 @@ const debounce = (fn, delay) => {
       delay > 0 ? delay : 100
     );
   };
-}
+};
 
 const props = defineProps({
   width: {
@@ -73,32 +73,32 @@ const props = defineProps({
     type: Object,
     default: () => ({}),
   },
-})
+});
 onMounted(() => {
   onResize = debounce(() => {
-    resize()
+    resize();
   }, props.delay);
 
   nextTick(() => {
     resize();
     addListener();
-  })
-})
+  });
+});
 watch(() => {
   props.selfAdaption = (val) => {
     if (val) {
-      resize()
-      addListener()
+      resize();
+      addListener();
     } else {
-      clearListener()
-      clearStyle()
+      clearListener();
+      clearStyle();
     }
-  }
-})
+  };
+});
 
 const initSize = () => {
   return new Promise((resolve, reject) => {
-    console.log(screenWrapper.value)
+    // console.log(screenWrapper.value)
     //给父元素设置 overflow:hidden
     screenWrapper.value.parentNode.style.overflow = "hidden";
     screenWrapper.value.parentNode.scrollLeft = 0;
@@ -119,10 +119,9 @@ const initSize = () => {
       }
       // console.log(11, originalWidth.value, currentHeight.value)
       resolve();
-    })
-  })
-
-}
+    });
+  });
+};
 const updateSize = () => {
   if (currentHeight.value && currentWidth.value) {
     screenWrapper.value.style.width = `${currentWidth.value}px`;
@@ -132,7 +131,7 @@ const updateSize = () => {
     screenWrapper.value.style.width = `${originalWidth.value}px`;
     screenWrapper.value.style.height = `${originalHeight.value}px`;
   }
-}
+};
 const handleAutoScale = (scale) => {
   if (!props.autoScale) return;
   const screen_Wrapper = screenWrapper.value;
@@ -144,7 +143,7 @@ const handleAutoScale = (scale) => {
   screenWrapper.value.style.transform = `scale(${scale},${scale}) `;
   let mx = Math.max((currentWidth - domWidth * scale) / 2, 0);
   let my = Math.max((currentHeight - domHeight * scale) / 2, 0);
-  if (typeof props.autoScale === 'object') {
+  if (typeof props.autoScale === "object") {
     // props.autoScale 对象不存在 x 或 y 属性时将 mx 或 my 设置为 0。
     // @ts-ignore
     !props.autoScale.x && (mx = 0);
@@ -161,7 +160,7 @@ const handleAutoScale = (scale) => {
     scale,
   });
   screenWrapper.value.style.margin = `${my}px ${mx}px`;
-}
+};
 
 const updateScale = () => {
   const screen_Wrapper = screenWrapper.value;
@@ -182,11 +181,11 @@ const updateScale = () => {
   // 按照宽高最小比例进行缩放
   const scale = Math.min(widthScale, heightScale);
   handleAutoScale(scale);
-}
+};
 const clearStyle = () => {
   screenWrapper.value.parentNode.style.overflow = "auto";
   screenWrapper.value.style = "";
-}
+};
 
 const clearListener = () => {
   window.removeEventListener("resize", onResize);
@@ -205,7 +204,6 @@ const resize = async () => {
 onBeforeUnmount(() => {
   clearListener();
 });
-
 </script>
 
 <style scoped>
