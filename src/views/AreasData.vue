@@ -125,7 +125,7 @@ const addFilesToZip = async (zip, children, basePath) => {
     if (child.type === "file") {
       // 如果是文件，下载并添加到 ZIP
       const result = await apiDownload(childFullPath);
-      zip.file(childFullPath.split("\\public\\平台数据包")[1], result.data); // 保持源文件的目录结构
+      zip.file(child.path, result.data); // 保持源文件的目录结构
     } else if (child.type === "directory") {
       // 如果是目录，递归调用，传入新的相对路径
       await addFilesToZip(zip, child.children, childFullPath);
