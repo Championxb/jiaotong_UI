@@ -41,7 +41,13 @@
                     "
                     @click="downloadFile(data)"
                   >
-                    <el-icon :size="25">
+                    <el-icon
+                      :size="25"
+                      class="downloadIcon"
+                      :style="{
+                        color: clickedIcons[data.path] ? '#66bb6a' : '',
+                      }"
+                    >
                       <IconIcBaselineCloudDownload />
                     </el-icon>
                   </span>
@@ -85,7 +91,7 @@ onMounted(() => {
     );
   });
 });
-
+const clickedIcons = ref({}); // 存储已点击的图标路径
 const downloadFile = async (data) => {
   const fullPath = basePath + data.path;
   // console.log(fullPath);
@@ -93,8 +99,11 @@ const downloadFile = async (data) => {
     // 使用 axios 获取文件
     try {
       const result = await apiDownload(fullPath);
-      console.log(result);
+      // console.log(result);
       createDownloadUrl(result, fullPath, "file");
+
+      //改变当前点击图标的颜色 记录当前点击图标的路径为已点击
+      clickedIcons.value[data.path] = true;
     } catch (error) {
       console.error(error);
     }
@@ -109,8 +118,11 @@ const downloadFile = async (data) => {
       // }
       await addFilesToZip(zip, data.children, basePath); // 递归添加
       const zipContent = await zip.generateAsync({ type: "blob" });
-      console.log(zipContent, `${data.path}.zip`);
+      // console.log(zipContent, `${data.path}.zip`);
       createDownloadUrl(zipContent, `${data.path}.zip`, "directory"); // 创建下载链接
+
+      // 记录当前点击图标的路径为已点击
+      clickedIcons.value[data.path] = true;
     } catch (error) {
       console.error(error);
     }
@@ -244,5 +256,8 @@ const contents = ref(["综合交通数据", "站城数据", "站区数据", "站
 }
 :deep(.el-tree-node__content .el-icon) {
   font-size: 20px;
+}
+.downloadIcon {
+  transition: color 0.3s; /* 添加颜色变化的过渡效果 */
 }
 </style>
