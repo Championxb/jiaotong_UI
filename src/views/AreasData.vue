@@ -4,10 +4,27 @@
       <div class="return" @click="returnHome"></div>
       <div class="content">
         <div class="content_left">
-          <img class="areaImg" src="../assets/站城左图.png" />
+          <template v-if="currentSelectButtonPage == 1">
+            <img src="../assets/综合交通数据公式.png" style="width: 80%" />
+          </template>
+          <template v-else v-for="(item, index) in leftPreview">
+            <img
+              class="areaImg"
+              :src="item"
+              @click="changeLeftPreview(index)"
+            />
+          </template>
+        </div>
+        <div
+          class="content_center"
+          :class="contents[currentSelectButtonPage].className"
+        >
+          <img :src="contents[currentSelectButtonPage].areaPreviewPath" />
         </div>
         <div class="content_right">
-          <div class="title">{{ contents[currentSelectButtonPage - 1] }}</div>
+          <div class="title">
+            {{ contents[currentSelectButtonPage].name }}
+          </div>
           <div class="files">
             <el-tree
               :data="fileSource"
@@ -56,6 +73,21 @@
             </el-tree>
           </div>
         </div>
+        <div class="uploadFile">
+          <img
+            src="../assets/yunshangchuan.png"
+            alt=""
+            style="width: 55px; margin-top: 55px; margin-left: 15px"
+            @click="uploadFile"
+          />
+          <img
+            class="unstartImg"
+            ref="unstartImg"
+            v-if="showImage"
+            src="../assets/icon-steal-unstart.png"
+            :style="{ opacity: fading ? 0 : 1, transition: 'opacity 2s ease' }"
+          />
+        </div>
       </div>
     </div>
   </ScaleScreen>
@@ -76,7 +108,9 @@ const currentSelectButtonPage = ref(0);
 const page = usePageStore();
 let fileSource = ref([]);
 let basePath = "\\public\\平台数据包\\";
-
+const areaPreview = ref(1);
+//记录所有内容相关的索引
+const contenIndex = ref(0);
 onMounted(() => {
   currentSelectButtonPage.value = route.params.id;
   console.log(currentSelectButtonPage.value);
@@ -84,13 +118,22 @@ onMounted(() => {
   //     page.setPageType(1);
   // }
 
-  axios.get("/public/directoryTree.json").then((res) => {
-    fileSource.value = res.data.slice(
-      currentSelectButtonPage.value - 1,
-      currentSelectButtonPage.value
-    );
+  // axios.get("/public/directoryTree.json").then((res) => {
+  //   fileSource.value = res.data.slice(
+  //     currentSelectButtonPage.value - 1,
+  //     currentSelectButtonPage.value
+  //   );
+  // });
+  contenIndex.value = currentSelectButtonPage.value;
+  getDirectoryTree(currentSelectButtonPage.value).then((res) => {
+    fileSource.value = res;
   });
 });
+//获得文件目录
+const getDirectoryTree = async (index) => {
+  const res = await axios.get("/public/directoryTree.json");
+  return res.data.slice(index - 1, index);
+};
 const clickedIcons = ref({}); // 存储已点击的图标路径
 const downloadFile = async (data) => {
   const fullPath = basePath + data.path;
@@ -161,11 +204,75 @@ const createDownloadUrl = (result, path, type = "file") => {
   document.body.removeChild(downloadElement);
   window.URL.revokeObjectURL(href);
 };
+
+const unstartImg = ref("");
+const fading = ref(false); // 用于控制淡出状态
+const showImage = ref(false); // 控制图片是否显示
+
+const uploadFile = () => {
+  if (fading.value) return; // 如果正在淡出，不执行
+  showImage.value = true; // 显示图片
+  fadeOutImage().then(() => {
+    showImage.value = false;
+    fading.value = false;
+  });
+};
+
+const fadeOutImage = () => {
+  return new Promise((resolve) => {
+    // 1秒后开始淡出效果
+    setTimeout(() => {
+      fading.value = true; // 开始淡出效果
+    }, 0);
+    setTimeout(() => {
+      resolve(); // 淡出效果完成后返回 Promise
+    }, 2000);
+  });
+};
 const returnHome = () => {
   // 返回上一级
   router.push("/index");
 };
-const contents = ref(["综合交通数据", "站城数据", "站区数据", "站体数据"]);
+const changeLeftPreview = (index) => {
+  let map = {
+    0: 4,
+    1: 3,
+    2: 2,
+  };
+  getDirectoryTree(map[index]).then((res) => {
+    fileSource.value = res;
+  });
+  router.push(`/areasData/${map[index]}`);
+  currentSelectButtonPage.value = map[index];
+};
+const leftPreview = ref([
+  new URL("../assets/站体左图.png", import.meta.url),
+  new URL("../assets/站区左图.png", import.meta.url),
+  new URL("../assets/站城左图.png", import.meta.url),
+]);
+const contents = ref([
+  {},
+  {
+    name: "综合交通数据",
+    className: "area1",
+    areaPreviewPath: new URL("../assets/通用对应.png", import.meta.url),
+  },
+  {
+    name: "站城数据",
+    className: "area2",
+    areaPreviewPath: new URL("../assets/站城对应.png", import.meta.url),
+  },
+  {
+    name: "站区数据",
+    className: "area3",
+    areaPreviewPath: new URL("../assets/站区对应.png", import.meta.url),
+  },
+  {
+    name: "站体数据",
+    className: "area4",
+    areaPreviewPath: new URL("../assets/站体对应.png", import.meta.url),
+  },
+]);
 </script>
 
 <style lang="scss" scoped>
@@ -209,13 +316,69 @@ const contents = ref(["综合交通数据", "站城数据", "站区数据", "站
       width: 32%;
       height: 76%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
 
-      .areaImg {
+      .areaImg:nth-child(1) {
+        width: 160px;
+        margin-right: 14px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      .areaImg:nth-child(2) {
+        width: 300px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      .areaImg:nth-child(3) {
+        width: 450px;
+        cursor: pointer;
       }
     }
 
+    /* 默认状态下设置过渡效果 */
+    .content_left .areaImg {
+      transition: transform 0.5s ease; /* 设置过渡效果 */
+    }
+
+    /* 鼠标悬停效果 */
+    .content_left .areaImg:hover {
+      transform: scale(1.1); /* 将图片放大10% */
+    }
+
+    .area1 {
+      position: absolute;
+      top: 55px;
+      left: 33.5%;
+      img {
+        width: 97%;
+      }
+    }
+    .area2 {
+      position: absolute;
+      top: 70px;
+      left: 29%;
+      img {
+        width: 95%;
+      }
+    }
+    .area3 {
+      position: absolute;
+      top: 70px;
+      left: 32%;
+      img {
+        width: 95%;
+      }
+    }
+    .area4 {
+      position: absolute;
+      top: 70px;
+      left: 32.5%;
+      img {
+        width: 95%;
+      }
+    }
     .content_right {
       width: 53%;
       height: 82%;
@@ -238,6 +401,16 @@ const contents = ref(["综合交通数据", "站城数据", "站区数据", "站
         width: 80%;
         height: 80%;
         // background: #0a76e2;
+      }
+    }
+
+    .uploadFile {
+      .unstartImg {
+        position: absolute;
+        top: 120px;
+        right: 20px;
+        width: 300px;
+        transition: width 0.5s;
       }
     }
   }
