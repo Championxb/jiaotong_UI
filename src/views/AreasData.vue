@@ -143,8 +143,7 @@ const downloadFile = async (data) => {
     try {
       const result = await apiDownload(fullPath);
       // console.log(result);
-      createDownloadUrl(result, fullPath, "file");
-
+      createDownloadUrl(result.data, fullPath, "file");
       //改变当前点击图标的颜色 记录当前点击图标的路径为已点击
       clickedIcons.value[data.path] = true;
     } catch (error) {
@@ -174,16 +173,19 @@ const downloadFile = async (data) => {
 };
 
 // 递归将文件添加到 ZIP
-const addFilesToZip = async (zip, children, basePath) => {
+const addFilesToZip = async (zip, children, basePath, relativePath = "") => {
   for (const child of children) {
     const childFullPath = basePath + child.path; // 获取完整路径
+    const childRelativePath = relativePath + "/" + child.path.split("\\").pop(); // 获取相对路径
+    // console.log("Full Path:", childFullPath); // 完整路径，用于下载文件
+    // console.log("Relative Path:", childRelativePath); // 相对路径，用于 ZIP 文件结构
     if (child.type === "file") {
       // 如果是文件，下载并添加到 ZIP
       const result = await apiDownload(childFullPath);
-      zip.file(child.path, result.data); // 保持源文件的目录结构
+      zip.file(childRelativePath, result.data); // 保持源文件的目录结构
     } else if (child.type === "directory") {
       // 如果是目录，递归调用，传入新的相对路径
-      await addFilesToZip(zip, child.children, childFullPath);
+      await addFilesToZip(zip, child.children, basePath, childRelativePath);
     }
   }
 };
@@ -191,11 +193,10 @@ const addFilesToZip = async (zip, children, basePath) => {
 const createDownloadUrl = (result, path, type = "file") => {
   const downloadElement = document.createElement("a");
   let href = "";
+  href = URL.createObjectURL(result);
   if (type == "file") {
-    href = URL.createObjectURL(result.data);
     downloadElement.download = path.split("\\").pop();
   } else if (type == "directory") {
-    href = URL.createObjectURL(result);
     downloadElement.download = path;
   }
   downloadElement.href = href;
