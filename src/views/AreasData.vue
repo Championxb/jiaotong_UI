@@ -177,8 +177,8 @@ const addFilesToZip = async (zip, children, basePath, relativePath = "") => {
   for (const child of children) {
     const childFullPath = basePath + child.path; // 获取完整路径
     const childRelativePath = relativePath + "/" + child.path.split("\\").pop(); // 获取相对路径
-    // console.log("Full Path:", childFullPath); // 完整路径，用于下载文件
-    // console.log("Relative Path:", childRelativePath); // 相对路径，用于 ZIP 文件结构
+    console.log("Full Path:", childFullPath); // 完整路径，用于下载文件
+    console.log("Relative Path:", childRelativePath); // 相对路径，用于 ZIP 文件结构
     if (child.type === "file") {
       // 如果是文件，下载并添加到 ZIP
       const result = await apiDownload(childFullPath);
