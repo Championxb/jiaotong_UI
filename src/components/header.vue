@@ -14,17 +14,8 @@
     </div>
     <div class="tool">
       <div class="search" v-if="!isFirstPage">
-        <el-select
-          v-model="selectValue"
-          placeholder="Select"
-          style="width: 240px"
-        >
-          <el-option
-            v-for="item in options"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value"
-          />
+        <el-select v-model="selectValue" placeholder="Select" style="width: 240px">
+          <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
         </el-select>
       </div>
       <div class="flex">
@@ -44,6 +35,12 @@
           </div>
         </div>
         <div class="flex_right">
+          <!-- 退出登录按钮 -->
+          <div
+            style="background-color: aquamarine; color: black;width: 50px;height: 30px;line-height: 30px; text-align: center;border-radius: 50px;cursor: pointer;"
+            @click="logout">
+            <span>退出</span>
+          </div>
           <div class="return" v-if="isFirstPage" @click="backHome">
             <img src="../assets/back.png" />
             <span>首页</span>
@@ -149,6 +146,12 @@ const timeFn = () => {
     dateDay.value = h + ":" + m + ":" + s;
   }, 1000);
 };
+
+const logout = () => {
+  // 删除存储在 localStorage 中的 Token
+  localStorage.removeItem('token');
+  router.push("/login");
+};
 </script>
 <style lang="scss" scoped>
 .title_wrap {
@@ -157,17 +160,20 @@ const timeFn = () => {
   margin-top: 5px;
   margin-bottom: 4px;
   color: rgb(255, 255, 255);
+
   .symbol_bg {
     position: absolute;
     left: 20px;
     top: 10px;
     width: 250px;
     height: 60px;
+
     img {
       width: 90%;
       // height: 100%;
     }
   }
+
   .title {
     position: relative;
     // width: 500px;
@@ -177,6 +183,7 @@ const timeFn = () => {
     height: 60px;
     line-height: 46px;
     top: 5px;
+
     .title-text {
       font-size: 38px;
       font-weight: 900;
@@ -192,6 +199,7 @@ const timeFn = () => {
       -webkit-text-fill-color: transparent;
       // animation: shine 30s linear infinite;
     }
+
     .title-text-sub {
       font-size: 14px;
       font-weight: 900;
@@ -212,6 +220,7 @@ const timeFn = () => {
       // transform: translate(-2px, 2px);
     }
   }
+
   .tool {
     .search {
       position: absolute;
@@ -219,25 +228,30 @@ const timeFn = () => {
       top: 120px;
       z-index: 1;
     }
+
     .flex {
       display: flex;
       position: absolute;
       right: 10px;
       top: 10px;
+
       .flex_left {
         flex-direction: column;
 
         margin-right: 15px;
+
         .timers {
           align-items: center;
           display: flex;
           font-size: 12px;
           color: #dedede;
+
           span {
             font-size: 20px;
             color: white;
           }
         }
+
         .names {
           display: flex;
           justify-content: center;
@@ -246,36 +260,43 @@ const timeFn = () => {
           font-size: 13px;
           margin-top: 5px;
           flex-direction: column;
+
           .name-left {
             margin-bottom: 5px;
           }
+
           .name-right {
             color: #efeeee;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
             .name {
               margin-bottom: 4px;
             }
           }
         }
       }
+
       .flex_right {
         .return {
           margin: 12px 0 0 10px;
           display: flex;
           align-items: center;
           cursor: pointer;
+
           img {
             width: 25px;
           }
+
           span {
             font-size: 25px;
             margin-left: 5px;
             margin-right: 15px;
           }
         }
+
         .return:hover {
           transform: translateY(-6px);
           transition: transform 0.5s;
@@ -283,6 +304,7 @@ const timeFn = () => {
       }
     }
   }
+
   .sperate {
     // 一条长线 分割
     position: absolute;
@@ -296,10 +318,12 @@ const timeFn = () => {
     filter: blur(1px);
   }
 }
+
 @keyframes shine {
   0% {
     background-position: 500%;
   }
+
   100% {
     background-position: -500%;
   }
