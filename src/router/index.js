@@ -69,6 +69,11 @@ const router = createRouter({
       component: () => import("../views/AreasData.vue"),
     },
     {
+      path: "/cartoonChart",
+      name: "cartoonChart",
+      component: () => import("../views/CartoonChart.vue"),
+    },
+    {
       path: "/home",
       name: "home",
       component: () => import("../views/HomeView.vue"),

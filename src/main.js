@@ -17,6 +17,7 @@ import "@/assets/css/index.scss";
 import ItemWrap from "./components/item-wrap/item-wrap.vue";
 // import * as echarts from "echarts"; // 选择局部导入
 import echarts from "./utils/echarts";
+import VChart from "vue-echarts";
 const app = createApp(App);
 const pinia = createPinia();
 
@@ -24,6 +25,7 @@ pinia.use(piniaPluginPersistedstate);
 // echart使用
 app.config.globalProperties.$echarts = echarts; // vue3的挂载方式（一个用于注册能够被应用内所有组件实例访问到的全局属性的对象。）
 app.provide("$echarts", echarts); // vue3采用provide, inject方式使用
+app.component("v-chart", VChart);
 
 // app.use(dataV);
 app.use(DataVVue3);
